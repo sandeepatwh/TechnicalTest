@@ -1,0 +1,17 @@
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\RiteQ.deps.json
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\RiteQ.runtimeconfig.json
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\RiteQ.runtimeconfig.dev.json
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\RiteQ.dll
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\RiteQ.pdb
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.csproj.CoreCompileInputs.cache
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.AssemblyInfoInputs.cache
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.AssemblyInfo.cs
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.dll
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.pdb
+C:\Development\RiteQ\RiteQ\bin\Debug\netcoreapp2.1\Interop.AutoItX3Lib.dll
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\Interop.AutoItX3Lib.dll
+C:\Development\RiteQ\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.csproj.ResolveComReference.cache
