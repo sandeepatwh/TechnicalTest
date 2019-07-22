@@ -14,5 +14,7 @@ namespace RiteQ.Helper
                 .Build();
             return config;
         }
+
+
     }
 }

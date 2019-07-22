@@ -12,17 +12,9 @@ namespace RiteQ.PageModels
     {
         private readonly IWebDriver _driver;
         private IWebElement SharingPopUpWindowElement => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("unified-share-modal"));
-
-
         private IWebElement FolderName => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("scl-input"));
         private IWebElement EmailId => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("mc-tokenized-input-input"));
         private IWebElement ShareButton => SharingPopUpWindowElement.FindElement(By.ClassName("scl-sharing-modal-footer-inband")).FindElement(By.ClassName("mc-button-content"));
-
-        //private IWebElement FolderName => WebDriverExtensions.WaitForElementToBeClickable(_driver, SharingPopUpWindowElement.FindElement(By.ClassName("scl-input")));
-        //private IWebElement EmailId => WebDriverExtensions.WaitForElementToBeClickable(_driver, SharingPopUpWindowElement.FindElement(By.ClassName("mc-tokenized-input-input")));
-        //private IWebElement ShareButton => SharingPopUpWindowElement.FindElement(By.ClassName("scl-sharing-modal-footer-inband")).FindElement(By.ClassName("mc-button-content"));
-
-
 
         public SharingPopUpPage(IWebDriver driver)
         {

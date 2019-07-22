@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\RiteQ\\RiteQ\\RiteQ.csproj": {}
+    "C:\\Development\\TechnicalTest\\RiteQ\\RiteQ.csproj": {}
   },
   "projects": {
-    "C:\\Development\\RiteQ\\RiteQ\\RiteQ.csproj": {
+    "C:\\Development\\TechnicalTest\\RiteQ\\RiteQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\RiteQ\\RiteQ\\RiteQ.csproj",
+        "projectUniqueName": "C:\\Development\\TechnicalTest\\RiteQ\\RiteQ.csproj",
         "projectName": "RiteQ",
-        "projectPath": "C:\\Development\\RiteQ\\RiteQ\\RiteQ.csproj",
+        "projectPath": "C:\\Development\\TechnicalTest\\RiteQ\\RiteQ.csproj",
         "packagesPath": "C:\\Users\\ashuc\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\RiteQ\\RiteQ\\obj\\",
+        "outputPath": "C:\\Development\\TechnicalTest\\RiteQ\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -77,6 +77,10 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[3.141.0, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.0.225, )"
             },
             "nunit": {
               "target": "Package",

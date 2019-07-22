@@ -14,6 +14,7 @@
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>
       <Isolated>false</Isolated>
+      <Private>true</Private>
     </COMReference>
   </ItemGroup>
 
@@ -27,16 +28,17 @@
     <PackageReference Include="Selenium.Chrome.WebDriver" Version="75.0.0" />
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="libs\" />
-    <Folder Include="Tests\" />
-    <Folder Include="Utils\FilesToUpload\" />
+    <PackageReference Include="SpecFlow" Version="3.0.225" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\TestFile1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\TestFile2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
