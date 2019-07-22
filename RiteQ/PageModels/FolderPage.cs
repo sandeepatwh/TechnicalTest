@@ -20,7 +20,6 @@ namespace RiteQ.PageModels
         private IWebElement HeaderText => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("page-header-text"));
         private IWebElement BrowseFile => AppActionsMenu.FindElement(By.ClassName("mc-tertiary-link-button-content")).FindElement(By.ClassName("ue-effect-container"));
 
-
         public FolderPage(IWebDriver driver)
         {
             this._driver = driver;
@@ -42,8 +41,8 @@ namespace RiteQ.PageModels
                 _autoIt.WinWaitActive("Open");
                 _autoIt.ControlFocus("Open", "", "Edit1");
                 _autoIt.ControlSetText("Open", "", "Edit1", fileName);
-                Thread.Sleep(1500);
                 _autoIt.ControlClick("Open", "", "Button1");
+                Thread.Sleep(5000);
                 WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("brws-checkbox"));
                 _driver.Navigate().Refresh();
             }

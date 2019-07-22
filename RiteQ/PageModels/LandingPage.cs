@@ -5,16 +5,18 @@ using SeleniumExtras.PageObjects;
 
 namespace RiteQ.PageModels
 {
-   public class LandingPage
+    public class LandingPage
     {
 
         private readonly IWebDriver _driver;
+        readonly AppSettings _appSettings = new AppSettings();
 
         private IWebElement SignInLink => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.Id("sign-up-in"));
         private IWebElement EmailTextBox => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.Name("login_email"));
         private IWebElement PasswordTextBox => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.Name("login_password"));
         private IWebElement SubmitButton => _driver.FindElement(By.ClassName("login-button"));
-      
+
+
 
         public LandingPage(IWebDriver driver)
         {
@@ -22,24 +24,21 @@ namespace RiteQ.PageModels
             PageFactory.InitElements(driver, this);
         }
 
-        
+
 
         public void GoToHomePage()
         {
-            var config = Utils.InitConfiguration();
-
-            _driver.Navigate().GoToUrl("https://www.dropbox.com/");
+            _driver.Navigate().GoToUrl(_appSettings.BaseUrl);
 
             SignInLink.Click();
 
-            EmailTextBox.SendKeys("sandeepatwh@gmail.com");
+            EmailTextBox.SendKeys(_appSettings.Email);
 
-            PasswordTextBox.SendKeys("Password123");
+            PasswordTextBox.SendKeys(_appSettings.Password);
 
             SubmitButton.Click();
-            
         }
 
-       
+
     }
 }

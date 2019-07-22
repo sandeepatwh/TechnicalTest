@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using RiteQ.Helper;
 using RiteQ.Selenium;
 using SeleniumExtras.PageObjects;
 
@@ -11,6 +12,7 @@ namespace RiteQ.PageModels
     public class SharingPopUpPage
     {
         private readonly IWebDriver _driver;
+        readonly AppSettings _appSettings = new AppSettings();
         private IWebElement SharingPopUpWindowElement => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("unified-share-modal"));
         private IWebElement FolderName => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("scl-input"));
         private IWebElement EmailId => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("mc-tokenized-input-input"));
@@ -26,7 +28,7 @@ namespace RiteQ.PageModels
         public void ShareFolder()
         {
             FolderName.SendKeys(GetRandomFolderName(6));
-            EmailId.SendKeys("sandysomu@yahoo.com");
+            EmailId.SendKeys(_appSettings.EmailIdToShareWith);
             ShareButton.Click();
         }
 

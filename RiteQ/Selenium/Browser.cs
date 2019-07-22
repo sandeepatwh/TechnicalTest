@@ -12,14 +12,11 @@ namespace RiteQ.Selenium
     {
 
         public static IWebDriver Driver => GetDriver();
-
-   
+        
         public static IWebDriver GetDriver()
         {
             return new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-
         }
-
-
+        
     }
 }
