@@ -6,7 +6,7 @@ using RiteQ.Selenium;
 
 namespace RiteQ.Tests
 {
-    public class LoginTests
+    public class ShareFolderTests
     {
         private readonly FolderPage _folderPage;
         private readonly LandingPage _landingPage;
@@ -15,7 +15,7 @@ namespace RiteQ.Tests
         private readonly FolderToSharePage _folderToSharePagePage;
         readonly IWebDriver _driver = Browser.Driver;
 
-        public LoginTests()
+        public ShareFolderTests()
         {
             _folderPage = new FolderPage(_driver);
             _landingPage = new LandingPage(_driver);

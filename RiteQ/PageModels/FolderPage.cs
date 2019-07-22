@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using RiteQ.Selenium;
 using SeleniumExtras.PageObjects;
 using AutoItX3Lib;
+using NUnit.Framework;
 
 
 namespace RiteQ.PageModels
@@ -14,6 +15,7 @@ namespace RiteQ.PageModels
     public class FolderPage
     {
         private readonly IWebDriver _driver;
+
         private readonly AutoItX3 _autoIt = new AutoItX3Class();
         private IWebElement AppActionsMenu => WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("appactions-menu--buttons"));//c-avatar--circle
         private IWebElement AvatarPhoto => WebDriverExtensions.WaitForElementToExist(_driver, By.ClassName("c-avatar--circle"));
@@ -43,7 +45,7 @@ namespace RiteQ.PageModels
                 _autoIt.ControlSetText("Open", "", "Edit1", fileName);
                 _autoIt.ControlClick("Open", "", "Button1");
                 Thread.Sleep(5000);
-                WebDriverExtensions.WaitForElementToBeVisible(_driver, By.ClassName("brws-checkbox"));
+                ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", AvatarPhoto);
                 _driver.Navigate().Refresh();
             }
 

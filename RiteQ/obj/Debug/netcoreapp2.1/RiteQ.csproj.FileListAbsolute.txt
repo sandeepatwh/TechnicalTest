@@ -34,3 +34,4 @@ C:\Development\TechnicalTest\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.AssemblyInfoInp
 C:\Development\TechnicalTest\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.AssemblyInfo.cs
 C:\Development\TechnicalTest\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.dll
 C:\Development\TechnicalTest\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.pdb
+C:\Development\TechnicalTest\RiteQ\obj\Debug\netcoreapp2.1\RiteQ.csprojAssemblyReference.cache
